@@ -1,0 +1,12 @@
+/*版权信息*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #C39BD3;
+    padding: 0px;
+    text-align: center;
+    font-size: 12px;
+    color: #4527A0;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../PublicApi/css/nav.css">
+    <link rel="stylesheet" href="../../PublicApi/css/footer.css">
+    <link rel="stylesheet" href="../../PublicApi/css/Background.css">
+    <link rel="stylesheet" href="../css/IssueC.css">
+    <title>Neo Art Mall</title> 
+  </head>
+
+  <body>
+    <!--导航栏-->
+    <header>
+        <div class="nav_change">
+          <p>Hello, Jungwoo!</p>
+          <nav>
+            <a href="Login.html">Login</a>
+            <a href="Register.html">Register</a>
+          </nav>
+        </div>
+        <nav class="other_link">
+          <a href="../../MainWeb/htmls/Main.html">Home</a>
+          <a href="../../SelfCenter/htmls/SelfCenter.html">User Center</a>
+          <a href="./Issue.html">Issue</a>
+          <a href="../../ShoppingList/htmls/Cart.html">My shopping list</a>
+          <a href="../../Search/htmls/Search.html">Search</a>
+          <a href="../../MainWeb/htmls/Main.html" onclick="logout()">Log Out</a>
+        </nav>
+    </header>
+<section>
+  <div class="slideshow">
+      <!--注册框-->
+      <h1 class="title">Issue Your Artwork </h1>
+
+      <!--必要信息-->
+      <form  class ="form">
+        <label for="image" class="image_upload">Pics (Only PNG, JPG, JPEG)
+          <p class="error im_e">Empty Image</p>
+          <input type="file" accept=".png, .jpg, .jpeg" id="fileInput">
+          <img id="previewImage" src="" alt="Click to Upload and See the Review">
+        </label>     
+
+        <div class="info">
+          <label for="name">Id:
+            <input type="text" class="id" maxlength="16" placeholder="Required if you want to change info!" oninput="detectFormat(1)" onblur="detectFormat(1)">
+            <p class="error">Empty Name</p>
+        </label>
+          <label for="name">Name:
+              <input type="text" class="name" maxlength="16" placeholder="Less than 16 letters" oninput="detectFormat(2)" onblur="detectFormat(2)">
+              <p class="error">Empty Name</p>
+          </label>
+          <label for="author">Author:
+              <input type="text" class="author" maxlength="16" placeholder="Less than 16 letters" oninput="detectFormat(3)" onblur="detectFormat(3)">
+              <p class="error">Empty Author</p>
+          </label>          
+          <label for="price">Price:
+            <input type="text" class="price" placeholder="Postive Integer" oninput="detectFormat(4)" onblur="detectFormat(4)">
+            <p class="error">Empty Price</p>
+          </label>
+          <label for="year">Year of Creation:
+            <input type="text" class="year" placeholder="Postive integer with length of 1-4"  oninput="detectFormat(5)" onblur="detectFormat(5)">
+            <p class="error">Empty Year</p>
+          </label>
+          <label for="style">Style:
+            <input type="text" class="style" placeholder="Less than 16 letters" oninput="detectFormat(6)" onblur="detectFormat(6)">
+            <p class="error">Empty Style</p>
+          </label>
+          <label for="size">Width:
+            <input type="text" class="width" placeholder="Postive Integer (mm)" oninput="detectFormat(7)" onblur="detectFormat(7)">
+            <p class="error">Empty Size</p>
+          </label>
+          <label for="size">Height:
+            <input type="text" class="height" placeholder="Postive Integer (mm)" oninput="detectFormat(8)" onblur="detectFormat(8)">
+            <p class="error">Empty Size</p>
+          </label>
+        </div>
+
+        <label for="intro" class="intro_wrap" >Introduction:
+          <textarea type="text" class="intro" placeholder="Less than 128 letters"  oninput="detectFormat(9)" onblur="detectFormat(9)"></textarea>
+          <p class="error">Empty Introduction</p>
+        </label>
+
+      </form>
+      <button class="submit" onclick="finalTest(0)">Submit as New Artwork</button>
+      <button class="submit" onclick="finalTest(1)">Modify My Artwork</button>
+  </div>
+</section>
+  </body>
+
+
+  <footer>
+    <p>&copy; 2023 Neo Art Mall. All rights reserved.</p>
+  </footer>
+</html>
+
+<script src="../../PublicApi/scripts/NavA.js"></script>
+<script src="../scripts/IssueC.js"></script>
+<script src="../../PublicApi/scripts/PicUploadT.js"></script>
+<script src="../../PublicApi/scripts/Logout.js"></script>

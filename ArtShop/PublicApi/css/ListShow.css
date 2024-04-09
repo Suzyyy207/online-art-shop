@@ -1,0 +1,37 @@
+body{
+    margin-bottom: 80px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.item{
+    margin:10px auto;
+    padding: 30px;
+    width: 85%;
+    height: auto;
+    display: flex;
+    gap:100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.btn{
+    background-color:#C39BD3;
+    color: #fff;
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer; 
+}
+.btn:hover {
+      background-color: #4527A0;
+}
+.hint{
+    font-family: 'Courier New', Courier, monospace;
+    color:blueviolet;
+    font-size: 20px;
+    text-align: center;
+}

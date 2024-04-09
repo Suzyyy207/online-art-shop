@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../PublicApi/css/nav.css">
+    <link rel="stylesheet" href="../../PublicApi/css/footer.css">
+    <link rel="stylesheet" href="../../PublicApi/css/Background.css">
+    <link rel="stylesheet" href="../css/ShowD.css">
+    <title>Neo Art Mall</title> 
+  </head>
+
+  <body>
+    <!--导航栏-->
+    <header>
+        <div class="nav_change">
+          <p>Hello, Jungwoo!</p>
+          <nav>
+            <a href="../../MainWeb/htmls/Login.html">Login</a>
+            <a href="../../MainWeb/htmls/Register.html">Register</a>
+          </nav>
+        </div>
+        <nav class="other_link">
+          <a href="../../MainWeb/htmls/Main.html">Home</a>
+          <a href="../../SelfCenter/htmls/SelfCenter.html">User Center</a>
+          <a href="./Issue.html">Issue</a>
+          <a href="../../ShoppingList/htmls/Cart.html">My shopping list</a>
+          <a href="../../Search/htmls/Search.html">Search</a>
+          <a href="../../MainWeb/htmls/Main.html" onclick="logout()">Log Out</a>
+        </nav>
+    </header>
+<section>
+  <div class="slideshow">
+      <h1 class="title">ArtWorks</h1>
+      <div class="wrap">
+        <div class="imgInfo">
+            <div class="image">
+                <img class="pic" src="" alt="Error">
+            </div>
+            <div class="zoom"></div>
+            <div class="info">
+                <p class="artname"></p>
+                <p class="author"></p>
+                <p class="price"></p>
+                <p class="year"></p>
+                <p class="style"></p>
+                <p class="width"></p>
+                <p class="height"></p>
+                <p class="day"></p>
+            </div>
+        </div>
+        <div class="introS">
+            <p class="owner"></p>
+            <p class="status"></p>
+            <p class="views"></p>
+            <p class="intro"></p>
+        </div>
+        <div class="btns">
+            <button class="btn" onclick="add2Cart()">Add to My Shopping List</button>
+            <button class="btn" onclick="buyGoods(-1)">Buy Now</button>
+        </div>
+
+
+      </div>
+  </div>
+</section>
+
+<section>
+  <p class="title"><strong>Comments</strong></p>
+  <div class="say">
+    <textarea class="my_comment"></textarea>
+    <button class="btn_c" onclick="comment()">comment</button>
+  </div>
+
+  <div class="comments">
+    
+  </div>
+  <div class="hint">
+  </div>
+</section>
+
+
+  </body>
+
+  <footer>
+    <p>&copy; 2023 Neo Art Mall. All rights reserved.</p>
+  </footer>
+</html>
+
+<script src="../../PublicApi/scripts/NavA.js"></script>
+<script src="../../PublicApi/scripts/Logout.js"></script>
+<script src="../../PublicApi/scripts/GetArtInfoB.js"></script>
+<script src="../../PublicApi/scripts/Add2CartA.js"></script>
+<script src="../../ShoppingList/scripts/DeleteCartA.js"></script>
+<script src="../../PublicApi/scripts/BuyGoodsE.js"></script>
+<script src="../scripts/CommentX.js"></script>
+<script src="../scripts/ZoomA.js"></script>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../PublicApi/css/nav.css">
+    <link rel="stylesheet" href="../../PublicApi/css/footer.css">
+    <link rel="stylesheet" href="../../PublicApi/css/Background.css">
+    <link rel="stylesheet" href="../../PublicApi/css/LogandReg.css">
+    <link rel="stylesheet" href="../css/Login.css">
+    <title>Neo Art Mall</title>
+  </head>
+
+  <body>
+    <!--导航栏-->
+    <header>
+        <div class="nav_change">
+            <p>Hello, Jungwoo!</p>
+            <nav>
+              <a href="Login.html">Login</a>
+              <a href="Register.html">Register</a>
+            </nav>
+          </div>
+          <nav class="other_link">
+            <a link="#">User Center</a>
+            <a link="#">My shopping list</a>
+            <a link="#">Search</a>
+          </nav>
+    </header>
+
+    <section>
+        <!--登录框-->
+        <div class="slideshow">
+            <h1 class="title"> Login </h1>
+
+            <!--登录框-->
+            <form class="form" id="login-form" class ="login_form">
+                <label for="name">Name:
+                    <input type="text" class="name" maxlength="32" oninput="detectEmpty(0)" onblur="detectEmpty(0)">
+                    <p class="error">Empty Name</p>
+                </label>
+                <label for="password">Password:
+                    <input type="password"  class="password" maxlength="32" oninput="detectEmpty(1)" onblur="detectEmpty(1)">
+                    <p class="error">Empty Password</p>
+                </label>
+
+                <!--验证码-->
+                <label for="verification">Verification:
+                    <input type="text" class="verification" oninput="validate()" onblur="validate()">
+                    <p class="error_v">Empty Verification</p>
+                </label>
+                
+                <input type="button" class="verification_code" onclick="createCode()" title='click to change' /> 
+    
+
+              <!--提交按钮-->
+              <button  type="button" onclick="finalTest()" class="submit" >Log in</button>
+            </form>
+
+            <div id="result"></div>
+        </div>
+    </section>
+
+  </body>
+
+  <footer>
+    <p>&copy; 2023 Neo Art Mall. All rights reserved.</p>
+  </footer>
+
+</html>
+
+<script src="../../PublicApi/scripts/NavA.js"></script>
+<script src="../../PublicApi/scripts/ValidCode.js"></script>
+<script src="../scripts/LoginB.js"></script>
+

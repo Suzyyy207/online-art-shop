@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../PublicApi/css/nav.css">
+    <link rel="stylesheet" href="../../PublicApi/css/footer.css">
+    <link rel="stylesheet" href="../css/SelfCenterD.css">    
+    <title>Neo Art Mall</title> 
+  </head>
+
+  <body>
+    <!--导航栏-->
+    <header>
+      <div class="nav_change">
+        <p>Hello, Jungwoo!</p>
+        <nav>
+          <a href="Login.html">Login</a>
+          <a href="Register.html">Register</a>
+        </nav>
+      </div>
+      <nav class="other_link">
+        <a href="../../MainWeb/htmls/Main.html">Home</a>
+        <a href="./SelfCenter.html">User Center</a>
+        <a href="../../ArtWorks/htmls/Issue.html">Issue</a>
+        <a href="../../ShoppingList/htmls/Cart.html">My shopping list</a>
+        <a href="../../Search/htmls/Search.html">Search</a>
+        <a href="../../MainWeb/htmls/Main.html" onclick="logout()">Log Out</a>
+      </nav>
+    </header>
+
+
+    <section>
+      <h1 class="title_h1">Self Center</h1>
+      <div class="main">
+        <div class="info_nav">
+          <div class="profile">
+            <img src="../../MainWeb/pics/image1.jpg" alt="头像">
+            <div class="info">
+              <p class="username">Name: JungWoo</p>
+              <p class="email">Email: xxxxx</p>
+              <p class="phone">Tel: xxx</p>
+              <p class="birthday">Birthday: xxxxx</p>
+              <p>Account: <num class="account">0</num></p>
+              <input></input>
+              <button type="button" onclick="charge()" >Charge</button>
+              <button onclick="changeInfo()">Change profile</button>
+            </div>
+          </div>
+
+          <!--div class="recent">
+            <h1>Recent</h1>
+            <div class="info">
+              <ul class="submenu-items">
+                <li>Order1</li>
+                <li>Order2</li>
+                <li>Order3</li>
+              </ul>
+            </div>
+          </div-->
+        </div>
+
+        <div class="goods_info">
+          <div class="goods_list">
+            <h3 class="goods_title">Your Merchandise</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Status</th>
+                  <th>Delete Button</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="goods_list">
+            <h3 class="goods_title">Your Order</h3>
+            <table class="table2">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Owner</th>
+                  <th>Year</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+
+      </div>
+    </section>     
+          
+      
+    
+  </body>
+  <footer>
+    <p>&copy; 2023 Neo Art Mall. All rights reserved.</p>
+  </footer>
+</html>
+
+
+<script src="../../PublicApi/scripts/NavA.js"></script>
+<script src="../scripts/SelfCenterE.js"></script>
+<script src="../../PublicApi/scripts/GetInfoB.js"></script>
+<script src="../../PublicApi/scripts/Logout.js"></script>

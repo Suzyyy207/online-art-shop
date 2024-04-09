@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Neo Art Mall</title>
+    <link rel="stylesheet" href="../../PublicApi/css/nav.css">
+    <link rel="stylesheet" href="../../PublicApi/css/footer.css">
+    <link rel="stylesheet" href="../../PublicApi/css/Background.css">
+    <link rel="stylesheet" href="../../PublicApi/css/LogandReg.css">
+    <link rel="stylesheet" href="../../MainWeb/css/Reg.css">
+  </head>
+
+  <body>
+    <header>
+        <!--导航栏-->
+        <div class="nav_change">
+            <p>Hello, Jungwoo!</p>
+            <nav>
+              <a href="Login.html">Login</a>
+              <a href="Register.html">Register</a>
+            </nav>
+          </div>
+          <nav class="other_link">
+            <a href="../../MainWeb/htmls/Main.html">Home</a>
+            <a href="./SelfCenter.html">User Center</a>
+            <a href="../../ArtWorks/htmls/Issue.html">Issue</a>
+            <a href="../../ShoppingList/htmls/Cart.html">My shopping list</a>
+            <a href="../../Search/htmls/Search.html">Search</a>
+            <a href="../../MainWeb/htmls/Main.html" onclick="logout()">Log Out</a>
+          </nav>
+    </header>
+
+    
+    <section>
+        <div class="slideshow">
+            <!--注册框-->
+            <h1 class="title"> Change Your Profile </h1>
+
+            <!--必要信息-->
+            <form  class ="form">
+                <label for="name">Name:
+                    <input type="text" class="name" maxlength="32" oninput="detectFormat(0,0)" onblur="detectFormat(0,0)">
+                    <p class="error">Empty Name</p>
+                </label>
+                <label for="password">Password:
+                    <input type="password" class="password" oninput="detectFormat(1,1)" onblur="detectFormat(1,1)">
+                    <p class="error">Empty Password</p>
+                    <div class="pwd_strength"></div>
+                </label>
+                <label for="confirm_password">Confirm Password:
+                    <input type="password" class="confirm_password" oninput="detectFormat(2,1)" onblur="detectFormat(2,1)">
+                    <p class="error">Empty Confirm Password</p>
+                </label>
+                <label for="intro">Introduction:
+                    <input type="text" class="intro" maxlength="32"oninput="detectFormat(3,2)">
+                    <p class="error">3-32 English Letters or Numbers. Cannot have only spaces.</p>
+                </label>
+
+                <label for="email">Email:
+                    <input type="email" class="email" oninput="detectFormat(4,3)">
+                    <p class="error">Wrong Format! It should be xx@xx.*</p>
+                </label>
+                <label for="phone">Phone:
+                    <input type="tel" class="phone" oninput="detectFormat(5,4)">
+                    <p class="error">Wrong Format! It should be 11 numbers.</p>
+                </label>
+                
+                
+                <label for="birth">Birth:
+                    <input type="text" class="birth" oninput="detectFormat(6,5)">
+                    <p class="error">Wrong Format! It should be valid YYYY-MM-DD.</p>
+                </label>
+                <label for="gender">Gender:
+                    <select class="gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label for="address">Address:
+                    <input type="text" class="address" name="address" >
+                </label>
+                <label for="country">Country:
+                    <select class="country" name="country">
+                        <option value="">Select</option>
+                        <option value="china">China</option>
+                        <option value="usa">America</option>
+                        <option value="japan">Japan</option>
+                    </select>
+                </label>
+
+
+                <!--验证码-->
+                <label for="verification">Verification:
+                    <input type="text" class="verification" oninput="validate()" onblur="validate()">
+                    <p class="error_v">Empty Verification</p>
+                </label>
+                
+                <input type="button" class="verification_code" onclick="createCode()" title='click to change' /> 
+
+            </form>
+            <button class="submit">Submit</button>
+        </div>
+    </section>
+
+  </body>
+
+  <footer>
+    <p>&copy; 2023 Neo Art Mall. All rights reserved.</p>
+  </footer>
+
+</html>
+
+<script src="../../PublicApi/scripts/NavA.js"></script>
+<script src="../../PublicApi/scripts/ValidCode.js"></script>
+<script src="../scripts/ChangeInfo.js"></script>

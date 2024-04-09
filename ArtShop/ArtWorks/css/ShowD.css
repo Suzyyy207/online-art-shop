@@ -1,0 +1,142 @@
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    color:#4527A0;
+    font-size: 45px;
+    text-align: center;
+}
+.slideshow { 
+    position: relative;
+    height: auto; 
+    width: 80%;
+    padding: 5px 50px 40px 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto 10px;
+}
+/*图片与基本信息*/
+.imgInfo{
+  display: grid;
+  grid-template-columns: 50% 40%;
+  gap:30px;
+  
+}
+  /*图片与放大器*/
+.image{
+  width: 100%;
+  height: 100%;
+}
+.zoom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 300px;
+  background-size: 1000px 1000px;
+  display: none;
+}
+
+
+.pic{
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+}
+  /*基本信息*/
+.info{
+  font-size:20px;
+  text-align: center;
+  justify-content: center;
+}
+.introS{
+  font-size:20px;
+  text-align: left;
+  margin:40px 40px;
+
+}
+
+/*按钮*/
+.btns{
+    display: flex;
+    gap:20px;
+}
+.btn {
+    margin:0px auto;
+    background-color:#C39BD3;
+    color: #fff;
+    width: 50%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;  
+}
+.btn:hover {
+      background-color: #4527A0;
+}
+
+/*评论区*/
+.say{
+  height: auto; 
+  width: 80%;
+  display: flex;
+  gap:30px;
+  margin: 20px auto 50px;
+}
+.my_comment{
+  margin-left: 100px;
+  width: 60%;
+}
+.comments{
+  margin:0 auto 100px;
+}
+.comment{
+  position: relative;
+  height: auto; 
+  width: 80%;
+  padding: 5px 50px 20px 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto 30px;
+}
+.son{
+  position: relative;
+  height: auto; 
+  width: 98%;
+  padding: 5px 20px 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  display: block;
+  margin: 5px auto;
+}
+.comment_info{
+  font-size: 14px;
+}
+.comment_info p{
+  color: gray;
+}
+.btns_c{
+  display: flex;
+  gap:20px;
+}
+.btn_c {
+    background-color:#C39BD3;
+    color: #fff;
+    width: 10%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;  
+}
+.btn_c:hover {
+      background-color: #4527A0;
+}
+.content{
+  font-size: 20px;
+}
+.reply{
+  margin: 20px auto;
+  gap:20px;
+}

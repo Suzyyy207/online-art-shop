@@ -1,0 +1,82 @@
+body{
+    margin-bottom: 100px;
+}
+
+header{
+    margin-bottom: 60px;
+}
+
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    color:#4527A0;
+    font-size: 45px;
+    text-align: center;
+}
+
+body .slideshow { 
+    position: relative;
+    height: auto; 
+    width: 70%;
+    padding: 10px 50px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+  
+.form{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0px;
+}
+  /*框前标识*/
+.form label {
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+  
+  /*所有填写框*/
+.form input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    grid-column: 2/3;
+    display: block;
+    padding: 10px;
+    min-width: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/*提交按钮*/
+.submit {
+    background-color:#C39BD3;
+    margin-top: 40px;
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;  
+}
+.submit:hover {
+      background-color: #4527A0;
+}
+
+
+/*验证码*/
+.verification_code{
+    font-family:Arial,宋体; 
+    font-style:italic; 
+    color: #4527A0; 
+    border:0; 
+    padding:2px 3px; 
+    letter-spacing:3px; 
+    font-weight:bolder;
+    height: 40px;
+    font-size: 25px;
+  }

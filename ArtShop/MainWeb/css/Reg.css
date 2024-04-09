@@ -1,0 +1,26 @@
+.form .pwd_strength{
+    display: none;
+}
+.form .error{
+    line-height:120%;
+    color: red;
+    display:none;
+}
+.form .error_v{
+    line-height:120%;
+    color: red;
+    display:none;
+}
+/*下拉选择*/
+select{
+    display: block;
+    padding: 10px;
+    min-width: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../PublicApi/css/nav.css">
+    <link rel="stylesheet" href="../../PublicApi/css/footer.css">
+    <link rel="stylesheet" href="../../PublicApi/css/Background.css">
+    <link rel="stylesheet" href="../../PublicApi/css/ListShow.css">
+    <link rel="stylesheet" href="../css/SearchA.css">
+    <title>Neo Art Mall</title> 
+  </head>
+
+  <body>
+    <!--导航栏-->
+    <header>
+        <div class="nav_change">
+          <p>Hello, Jungwoo!</p>
+          <nav>
+            <a href="../../MainWeb/htmls/Login.html">Login</a>
+            <a href="../../MainWeb/htmls/Register.html">Register</a>
+          </nav>
+        </div>
+        <nav class="other_link">
+          <a href="../../MainWeb/htmls/Main.html">Home</a>
+          <a href="../../SelfCenter/htmls/SelfCenter.html">User Center</a>
+          <a href="../../ArtWorks/htmls/Issue.html">Issue</a>
+          <a href="../../ShoppingList/htmls/Cart.html">My shopping list</a>
+          <a href="./Search.html">Search</a>
+          <a href="../../MainWeb/htmls/Main.html" onclick="logout()">Log Out</a>
+        </nav>
+    </header>
+
+    <!--搜索栏-->
+    <section class="search">
+      <img src="../../MainWeb/pics/Neo Art.gif" alt="Logo">
+      <div class="search_box">
+        <div class="form">
+          <div class="search_container">
+            <select name="scope" id="scope">
+              <option value="artname">Artworks</option>
+              <option value="author">Author</option>
+            </select>
+            <input type="text" class="hi">
+          </div>
+          <button class="search_btn" onclick="clickSearch()">Search</button>
+        </div>      
+      </div>
+      <p>Contact Us</p>
+    </section>
+
+    <!--排序选择框-->
+    <section class="sort">
+        <p class="sort">Sort by:</p>
+        <div class="sort_by">
+            <input type="radio" name="sort" value="artname" checked onchange="sortChange()">Name
+            <input type="radio" name="sort" value="price" onchange="sortChange()">Price
+            <input type="radio" name="sort" value="views" onchange="sortChange()">Views
+            <input type="radio" name="sort" value="year" onchange="sortChange()">Year
+        </div class="sort_by"> 
+    </section>
+
+
+    <!--搜索结果-->
+    <section>
+        <div class="hint">
+        </div>
+        <div class="list">
+        </div>
+
+        <div class="pages">
+            <button class="btn" onclick="clickPage(-1)">Last</button>
+            <p class="now_page">now / total</p>
+            <button class="btn" onclick="clickPage(1)">Next</button>
+            <input class="page"></input>
+            <button class="btn" onclick="gotoPage()">Go</button>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+  
+  </body>
+
+
+  <footer>
+    <p>&copy; 2023 Neo Art Mall. All rights reserved.</p>
+  </footer>
+</html>
+
+
+<script src="../../PublicApi/scripts/NavA.js"></script>
+<script src="../../PublicApi/scripts/Logout.js"></script>
+<script src="../../PublicApi/scripts/Jump2ShowA.js"></script>
+<script src="../scripts/SearchE.js"></script>

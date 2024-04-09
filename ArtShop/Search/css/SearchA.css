@@ -1,0 +1,120 @@
+  /*检索框*/
+.search {
+      display: grid;
+      grid-template-columns: 15% 75% 10%;
+      grid-template-rows: 150px;
+      margin:40px 150px 0 40px;
+      grid-column-gap:50px;
+      align-items: center;
+      align-content:stretch;
+}
+.search img{
+      grid-column: 1/2;
+      width: 90%;
+      height: 90%;
+      border-radius: 10px;
+}
+.search .search_box{
+      grid-column: 2/3; 
+      text-align: center;
+}
+.search p{
+      grid-column: 3/4;
+      left: 30px;
+      text-align: left;
+      color:#4527A0;
+      text-decoration: underline;
+      font-size: 18px;
+      font-weight: bold;
+}
+  /*检索框的搜索部分*/
+.search_box .form {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color:#4527A0;
+}
+.search_container {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 3px;
+}
+.search_box input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 5px;
+    flex: 1;
+    width: 500px;
+    height:40px;
+}
+.search_box select {
+    border: none;
+    outline: none;
+    height:50px;
+    background-color:#C39BD3;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.search_box .search_btn {
+    background-color:#C39BD3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.search_box button[type="submit"]:hover {
+    background-color: #4527A0;
+}
+
+/*排序*/
+.sort{
+    margin: -10px auto 10px;
+    width: fit-content;
+    color: #4527A0;
+}
+
+form{
+    margin:0 auto;
+    align-items: center;
+}
+.result{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.intro{
+    margin-left: 20px;
+    align-items: baseline;
+}
+/*翻页*/
+.pages{
+    display: flex;
+    width: 50%;
+    margin: 30px auto;
+}
+.btn{
+    margin:0 auto;
+}
+.now_page{
+    margin:auto;
+    color: #4527A0;
+    font-size: 20px;
+}
+.page {
+    display: block;
+    width: 50px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
